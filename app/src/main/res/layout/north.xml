@@ -5,18 +5,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    android:background="@color/northcol">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Up Page!"
+        android:text="Northern Page!"
         android:textColor="@color/black"
         android:gravity="center_horizontal"
         android:layout_marginTop="100dp"
         android:textSize="50sp" />
 
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/snowymountain" />
 
 </LinearLayout>

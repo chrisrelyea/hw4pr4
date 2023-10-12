@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="northcol">#ADD8E6 </color>
+    <color name="southcol">#FFC0CB </color>
+    <color name="eastcol">#98FB98 </color>
+    <color name="westcol">#FFFF99 </color>
+
 </resources>
