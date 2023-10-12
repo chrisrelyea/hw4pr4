@@ -6,8 +6,6 @@ import android.os.Bundle
 import android.util.Log
 import android.view.GestureDetector
 import android.view.MotionEvent
-import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import kotlin.math.abs
 
@@ -18,7 +16,7 @@ class MainActivity : AppCompatActivity(), GestureDetector.OnGestureListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.home)
         gestureDetector = GestureDetector(this)
     }
 
