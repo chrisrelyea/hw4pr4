@@ -1,6 +1,7 @@
 package com.example.swipedetect
 
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -67,25 +68,31 @@ class MainActivity : AppCompatActivity(), GestureDetector.OnGestureListener {
         var diffY = y2-y1
         var diffX = x2-x1
         var direction = ""
+        var intent: Intent
 
-        direction = if (abs(diffY) > abs(diffX)) {
+        if (abs(diffY) > abs(diffX)) {
             if (y2 >= y1) {
-                "DOWN"
+                direction = "DOWN"
+                intent = Intent(this@MainActivity, SouthActivity::class.java)
             } else {
-                "UP"
+                direction = "UP"
+                intent = Intent(this@MainActivity, NorthActivity::class.java)
+
             }
         } else {
             if (x1 >= x2) {
-                "LEFT"
+                direction = "LEFT"
+                intent = Intent(this@MainActivity, WestActivity::class.java)
+
             } else {
-                "RIGHT"
+                direction = "RIGHT"
+                intent = Intent(this@MainActivity, EastActivity::class.java)
+
             }
         }
         Log.d("direction", direction)
-        var result = false
-
+        startActivity(intent)
         Toast.makeText(this, direction, Toast.LENGTH_SHORT).show()
-
         return true
 
     }
