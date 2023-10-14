@@ -9,9 +9,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
-import android.widget.Toast
-import android.widget.Toast.makeText
-import kotlinx.coroutines.delay
 
 import java.util.Objects
 import kotlin.math.sqrt
